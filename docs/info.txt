@@ -1,0 +1,8 @@
+blender dir: /home/mike/tools/blender-4.5.1-linux-x64
+similar projects:
+https://github.com/softwarewrighter/css-text-sphere
+https://github.com/softwarewrighter/d3-text-sphere
+https://github.com/softwarewrighter/godot-text-sphere
+https://github.com/softwarewrighter/three-text-sphere
+https://github.com/softwarewrighter/wasm-text-sphere
+
