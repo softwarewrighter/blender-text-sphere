@@ -3,63 +3,63 @@
 ## System Overview
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        Entry Point                               │
-│                      run_blender.sh                              │
-└─────────────────────┬───────────────────────────────────────────┘
-                      │
-                      ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    Blender Runtime                               │
-│              /home/mike/tools/blender-4.5.1-linux-x64           │
-│                                                                  │
-│  ┌─────────────────────────────────────────────────────────┐    │
-│  │                   Python Scripts                         │    │
-│  │                                                          │    │
-│  │  ┌──────────┐   ┌──────────┐   ┌──────────┐            │    │
-│  │  │  main.py │──▶│ scene.py │──▶│ render.py│            │    │
-│  │  └──────────┘   └──────────┘   └──────────┘            │    │
-│  │        │              │                                  │    │
-│  │        │              ▼                                  │    │
-│  │        │        ┌───────────┐                           │    │
-│  │        └───────▶│animation.py│                          │    │
-│  │                 └───────────┘                           │    │
-│  │                       │                                  │    │
-│  │                       ▼                                  │    │
-│  │               ┌────────────┐                            │    │
-│  │               │ config.py  │                            │    │
-│  │               └────────────┘                            │    │
-│  └─────────────────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────────────────┘
-                      │
-                      ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                      Output                                      │
-│                  output/text_sphere.mp4                         │
-└─────────────────────────────────────────────────────────────────┘
++------------------------------------------------------------------+
+|                        Entry Point                                |
+|                      run_blender.sh                               |
++-----------------------------+------------------------------------+
+                              |
+                              v
++------------------------------------------------------------------+
+|                    Blender Runtime                                |
+|              /home/mike/tools/blender-4.5.1-linux-x64            |
+|                                                                   |
+|  +-----------------------------------------------------------+   |
+|  |                   Python Scripts                          |   |
+|  |                                                           |   |
+|  |  +----------+   +----------+   +----------+              |   |
+|  |  |  main.py |-->| scene.py |-->| render.py|              |   |
+|  |  +----------+   +----------+   +----------+              |   |
+|  |        |              |                                   |   |
+|  |        |              v                                   |   |
+|  |        |        +------------+                            |   |
+|  |        +------->|animation.py|                            |   |
+|  |                 +------------+                            |   |
+|  |                       |                                   |   |
+|  |                       v                                   |   |
+|  |               +------------+                              |   |
+|  |               | config.py  |                              |   |
+|  |               +------------+                              |   |
+|  +-----------------------------------------------------------+   |
++------------------------------------------------------------------+
+                              |
+                              v
++------------------------------------------------------------------+
+|                      Output                                       |
+|                  output/text_sphere.mp4                          |
++------------------------------------------------------------------+
 ```
 
 ## Directory Structure
 
 ```
 blender-text-sphere/
-├── docs/
-│   ├── info.txt           # Blender path and related projects
-│   ├── prd.md             # Product requirements
-│   ├── architecture.md    # This file
-│   ├── design.md          # Visual and technical design
-│   ├── planning.md        # Implementation roadmap
-│   └── status.md          # Current project status
-├── scripts/
-│   ├── main.py            # Orchestrator script
-│   ├── config.py          # Configuration constants
-│   ├── scene.py           # Scene construction
-│   ├── animation.py       # Animation keyframes
-│   └── render.py          # Render configuration
-├── output/
-│   └── text_sphere.mp4    # Rendered video output
-├── run_blender.sh         # Shell script to launch Blender
-└── README.md              # Project overview
+|-- docs/
+|   |-- info.txt           # Blender path and related projects
+|   |-- prd.md             # Product requirements
+|   |-- architecture.md    # This file
+|   |-- design.md          # Visual and technical design
+|   |-- planning.md        # Implementation roadmap
+|   +-- status.md          # Current project status
+|-- scripts/
+|   |-- main.py            # Orchestrator script
+|   |-- config.py          # Configuration constants
+|   |-- scene.py           # Scene construction
+|   |-- animation.py       # Animation keyframes
+|   +-- render.py          # Render configuration
+|-- output/
+|   +-- text_sphere.mp4    # Rendered video output
+|-- run_blender.sh         # Shell script to launch Blender
++-- README.md              # Project overview
 ```
 
 ## Component Details

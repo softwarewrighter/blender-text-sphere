@@ -5,7 +5,7 @@
 
 ## Overall Progress
 ```
-[██░░░░░░░░] 15% Complete
+[##........] 15% Complete
 ```
 
 ## Phase Status
