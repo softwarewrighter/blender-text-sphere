@@ -8,6 +8,7 @@ A Python-scripted Blender project that renders 3D text orbiting around a sphere,
 
 This project generates a 60fps 1080p video animation featuring rainbow-colored 3D text letters continuously orbiting around a translucent central sphere. The animation is created entirely through Python scripts that control Blender's scene construction, animation, and rendering pipeline.
 
+- [blender-text-sphere.mp4](https://youtu.be/DYGcJWHdK_o) - Blender Rendered Video 
 ## Related Projects
 
 This is part of a series of text-sphere demos across different technologies:
