@@ -1,0 +1,14 @@
+# Rendered output (large video files)
+output/
+
+# Playwright MCP cache
+.playwright-mcp/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Blender temp files
+*.blend1
+*.blend2
