@@ -2,6 +2,8 @@
 
 A Python-scripted Blender project that renders 3D text orbiting around a sphere, producing video output that matches the visual style of the related web UI demos.
 
+- [explainer video](https://www.youtube.com/watch?v=F_wGCsTFX50)
+
 ![Blender Text Sphere Screenshot](images/screenshot.png?ts=1735433189311)
 
 ## Overview
